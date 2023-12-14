@@ -13,16 +13,15 @@
 
 int main(int argc, const char * argv[])
 {
-    struct STUNServer servers[14] = {
+    struct STUNServer servers[12] = {
         {"stun.l.google.com" , 19302}, {"stun.l.google.com" , 19305},
         {"stun1.l.google.com", 19302}, {"stun1.l.google.com", 19305},
         {"stun2.l.google.com", 19302}, {"stun2.l.google.com", 19305},
         {"stun3.l.google.com", 19302}, {"stun3.l.google.com", 19305},
         {"stun4.l.google.com", 19302}, {"stun4.l.google.com", 19305},
-        {"stun.wtfismyip.com", 3478 }, {"stun.bcs2005.net"  , 3478 },
-        {"numb.viagenie.ca"  , 3478 }, {"173.194.202.127"   , 19302}};
+        {"stun.wtfismyip.com", 3478 }, {"stun.bcs2005.net"  , 3478 }};
     
-    for (int index = 0; index < 14; index++)
+    for (int index = 0; index < 12; index++)
     {
         char* address = malloc(sizeof(char) * 100);
         
